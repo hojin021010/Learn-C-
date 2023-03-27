@@ -1,0 +1,14 @@
+#include <iostream>
+int main() {
+	int num;
+	std::cin >> num;
+
+	if (num % 2 == 0)
+		std::cout << num << " 는/은 2의 배수" << "\n";
+	if (num % 3 == 0)
+		std::cout << num << " 는/은 3의 배수" << "\n";
+	if (num % 6 == 0)
+		std::cout << num << " 는/은 6의 배수" << "\n";
+	if (num % 9 == 0)
+		std::cout << num << " 는/은 9의 배수" << "\n";
+}
