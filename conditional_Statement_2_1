@@ -1,0 +1,30 @@
+#include <iostream>
+int main() {
+	int a, b, flag;
+	std::cout << "a, b를 순차적으로 입력 : " << "\n";
+	std::cin >> a >> b;
+	std::cout << "flag를 입력 : " << "\n";
+	std::cin >> flag;
+	switch (flag) {
+	case 0 :
+		std::cout << a + b << "\n";
+		break;
+	case 1 :
+		std::cout << ((double)a + b) / 2 << "\n";
+		break;
+	case 2 :
+		if (a > b) {
+			std::cout << a << "\n";
+		}
+		else
+			std::cout << b << "\n";
+		break;
+	case 3 :
+		if (a > b) {
+			std::cout << b << "\n";
+		}
+		else
+			std::cout << a << "\n";
+		break;
+	}
+}
