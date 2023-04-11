@@ -1,0 +1,17 @@
+#include <iostream>
+
+int permutation(int n, int r) {
+	int returnValue = 1;
+
+	for (r ; r > 0; r--) {
+		returnValue *= n;
+		n--;
+	}
+
+	return returnValue;
+}
+
+int main() {
+	std::cout << permutation(4, 3) << "\n";
+std::cout << permutation(6, 2) << "\n";
+}
